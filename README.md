@@ -1,5 +1,7 @@
-# grow-element-fn
-Update textarea height to its content with lines number customization
+# grow-element-fn [(GitHub)](https://github.com/Snowshield/grow-element-fn)
+
+Update textarea height to its content with lines number customization.
+
 
 ## Summary
 grow-element-fn is a library to auto-grow and auto-shrink textarea to fit its content. Works perfect with vertical scrollbar.
@@ -20,7 +22,7 @@ word-break: break-all;
 
 #### Install via NPM
 ```
--
+npm install --save grow-element-fn
 ```
 
 #### Browser compatibility
