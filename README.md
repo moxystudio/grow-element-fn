@@ -24,9 +24,9 @@ npm install --save grow-element-fn
 
 #### Browser compatibility
 
-Chrome | Firefox | IE | Safari | iOS Safari | Android | Opera Mini | Windows Phone IE
------- | --------|----|--------|------------|---------|------------|------------------
-yes    | ?     | ?  | ?    | ?        | ?       | ?          | ?
+Chrome | Firefox | EDGE |IE | Safari | iOS Safari | Android | Opera Mini | Windows Phone IE
+------ | --------|------|----|--------|------------|---------|------------|------------------
+yes    | ?     |  -   | -  | ?    | ?        | ?       | ?          | ?
 
 #### Usage
 
