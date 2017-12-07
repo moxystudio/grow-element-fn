@@ -16,8 +16,8 @@ export default function getHeightByLines({ el, lines }) {
   const parsedProps = parsedComputedProperties([
     'padding-top',
     'padding-bottom',
-    'border-top',
-    'border-bottom',
+    'border-top-width',
+    'border-bottom-width',
   ], el, style);
 
   // console.log(
@@ -38,6 +38,6 @@ export default function getHeightByLines({ el, lines }) {
   return (lineHeight * lines)
   + parsedProps['padding-top']
   + parsedProps['padding-bottom']
-  + parsedProps['border-top']
-  + parsedProps['border-bottom'];
+  + parsedProps['border-top-width']
+  + parsedProps['border-bottom-width'];
 }

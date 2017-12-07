@@ -14,7 +14,7 @@ Library to auto-grow and auto-shrink textarea to fit its content. Works perfect 
 word-wrap: break-word;
 word-break: break-all;
 line-height: 30px; // should be defined
-``` 
+```
 
 
 #### Install via NPM
@@ -24,9 +24,9 @@ npm install --save grow-element-fn
 
 #### Browser compatibility
 
-Chrome | Firefox | EDGE |IE | Safari | iOS Safari | Android | Opera Mini | Windows Phone IE
+Chrome | Firefox | IE | EDGE | Safari | iOS Safari | Android | Opera Mini | Windows Phone IE
 ------ | --------|------|----|--------|------------|---------|------------|------------------
-yes    | -     | -    | -  | ?    | ?        | ?       | ?          | ?
+yes    | 57    | 10 | +   | ?    | ?        | ?       | ?          | ?
 
 #### Usage
 

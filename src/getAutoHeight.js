@@ -3,22 +3,24 @@ import parsedComputedProperties from './parsedComputedProperties';
 
 export default function getAutoHeight(el) {
   // NOTE clone to preserve scroll
-  const clone = el.cloneNode();
+
+  // NOTE send true to copy textarea value in IE and EDGE
+  const clone = el.cloneNode(true);
 
   const width = getComputedStyle(el).getPropertyValue('width');
   clone.style.setProperty('width', width);
   clone.style.setProperty('height', '0');
   clone.style.setProperty('min-height', 'auto');
   clone.style.setProperty('max-height', 'auto');
-  document.body.append(clone);
+  document.body.appendChild(clone);
 
   const style = getComputedStyle(clone);
 
   const parsedProps = parsedComputedProperties([
     'padding-top',
     'padding-bottom',
-    'border-top',
-    'border-bottom',
+    'border-top-width',
+    'border-bottom-width',
   ], clone, style);
 
   let height;
@@ -29,25 +31,28 @@ export default function getAutoHeight(el) {
 
     // NOTE for debug
     // console.log(
-    //   'getAutoHeight',
+    //   'getAutoHeight 1',
     //   `${clone.scrollHeight} - ${
     //     parsedProps["padding-top"] + parsedProps["padding-bottom"]
-    //   } = ${height}`
+    //   } = ${height}`,
+    //   style.getPropertyValue('box-sizing'),
+    //   clone.getAttribute('class')
     // );
   } else {
     height = clone.scrollHeight
-    + parsedProps["border-top"]
-    + parsedProps["border-bottom"];
+    + parsedProps["border-top-width"]
+    + parsedProps["border-bottom-width"];
 
     // NOTE for debug
     // console.log(
-    //   'getAutoHeight',
+    //   'getAutoHeight 2',
     //   `${clone.scrollHeight} + ${
-    //     parsedProps["border-top"] + parsedProps["border-bottom"]
+    //     parsedProps["border-top-width"] + parsedProps["border-bottom-width"]
     //   } = ${height}`
     // );
   }
 
-  clone.remove();
+  // clone.remove();
+  document.body.removeChild(clone);
   return height;
 }
