@@ -1,0 +1,44 @@
+{
+  "name": "grow-element-fn",
+  "version": "1.0.0",
+  "description": "Update textarea height to its content with lines number customization",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack --env.NODE_ENV=production",
+    "update-dist": "git add dist",
+    "start": "webpack --env.NODE_ENV=development",
+    "test": "echo \"Error: I SHOULD FAIL LOLOLOLOLOL\" && exit 1"
+  },
+  "pre-commit": [
+    "build",
+    "update-dist"
+  ],
+  "keywords": [
+    "textarea",
+    "autogrow",
+    "autoheight",
+    "auto",
+    "grow",
+    "height",
+    "flex",
+    "stretch",
+    "max",
+    "min",
+    "extra"
+  ],
+  "author": "Nikita Borisenko <github.snowshield@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.12.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "pre-commit": "^1.2.2",
+    "webpack": "^3.10.0"
+  }
+}
