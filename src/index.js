@@ -3,21 +3,30 @@ import getSafeLineHeight from './getSafeLineHeight';
 import toPx from './toPx';
 import updateLimits from './updateLimits';
 
+// NOTE
+// line-height css property of params.el element should be defined
+//
+// Recomended styles:
+// word-wrap: break-word;
+// word-break: break-all;
+//
 // EXAMPLE
-// NOTE line-height css property of params.el element should be defined
+// import growElementFn from 'grow-element-fn';
+// const textarea = document.getElementById("my-textarea");
 //
-// function resizeTextarea() {
-//   const textarea = document.getElementById("my-textarea");
-//
-//   const growTextarea = () => growElementFn({
-//     el: el,
+// function growTextarea() {
+//   growElementFn({
+//     el: textarea,
 //     minLines: 1,
-//     maxLines: 8,
+//     maxLines: 4,
 //     extraLine: true,
 //   });
-//   //
-//   window.requestAnimationFrame(growTextarea);
-// },
+// }
+//
+// growTextarea();
+// textarea.addEventListener('focus', growTextarea);
+// textarea.addEventListener('blur', growTextarea);
+// textarea.addEventListener('input', growTextarea);
 
 export default function growElementFn(params) {
   const {
