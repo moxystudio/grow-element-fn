@@ -26,7 +26,7 @@ npm install --save grow-element-fn
 
 Chrome | Firefox | IE | EDGE | Safari | iOS Safari | Android | Opera Mini | Windows Phone IE
 ------ | --------|------|----|--------|------------|---------|------------|------------------
-yes    | 57    | 10 | +   | ?    | ?        | ?       | ?          | ?
+yes    | 57    | 10 | +   | ?    | ?        | ?       | +          | ?
 
 #### Usage
 
