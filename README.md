@@ -12,7 +12,7 @@ Library to auto-grow and auto-shrink textarea to fit its content. Works perfect 
 
 ```css
 word-wrap: break-word;
-word-break: break-all;
+white-space: pre-line;
 line-height: 30px; // should be defined
 ```
 
