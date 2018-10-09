@@ -1,4 +1,5 @@
 const properties = [
+  'boxSizing',
   'borderBottomWidth',
   'borderLeftWidth',
   'borderRightWidth',
