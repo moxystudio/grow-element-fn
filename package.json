@@ -1,6 +1,6 @@
 {
   "name": "@moxy/grow-element-fn",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Update textarea height to its content with lines number customization",
   "main": "dist/index.js",
   "scripts": {
