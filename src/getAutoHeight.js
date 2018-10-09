@@ -1,17 +1,11 @@
+import cloneTextarea from './cloneTextarea';
 import haveBorderBox from './haveBorderBox';
 import parsedComputedProperties from './parsedComputedProperties';
 
 export default function getAutoHeight(el) {
   // NOTE clone to preserve scroll
+  const clone = cloneTextarea(el);
 
-  // NOTE send true to copy textarea value in IE and EDGE
-  const clone = el.cloneNode(true);
-
-  const width = getComputedStyle(el).getPropertyValue('width');
-  clone.style.setProperty('width', width);
-  clone.style.setProperty('height', '0');
-  clone.style.setProperty('min-height', 'auto');
-  clone.style.setProperty('max-height', 'auto');
   document.body.appendChild(clone);
 
   const style = getComputedStyle(clone);
