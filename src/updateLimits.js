@@ -16,7 +16,7 @@ export default function updateLimits(params) {
   // css2-compatible setProperty method
   el.style.setProperty('min-height', toPx(minHeight));
   if (limitless) {
-    el.style.setProperty('max-height', 'auto');
+    el.style.setProperty('max-height', 'none');
   } else {
     el.style.setProperty('max-height', toPx(maxHeight));
   }

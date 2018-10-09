@@ -36,7 +36,7 @@ export default function cloneTextarea(element) {
   clonedElement.style.setProperty('width', width);
   clonedElement.style.setProperty('height', '0');
   clonedElement.style.setProperty('min-height', 'auto');
-  clonedElement.style.setProperty('max-height', 'auto');
+  clonedElement.style.setProperty('max-height', 'none');
 
   return clonedElement;
 }
