@@ -1,5 +1,5 @@
 {
-  "name": "grow-element-fn",
+  "name": "@moxystudio/grow-element-fn",
   "version": "1.0.3",
   "description": "Update textarea height to its content with lines number customization",
   "main": "dist/index.js",
@@ -43,6 +43,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Snowshield/grow-element-fn.git"
+    "url": "git+https://github.com/moxystudio/grow-element-fn.git"
   }
 }
