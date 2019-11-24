@@ -61,4 +61,4 @@ maxLines (Number = 0): maximum lines of textarea to display no scrollbar. If max
 extraLine (boolean = false): add extra line in the bottom of textarea. Usefull to remove content jumping on slow devices.
 
 
-#### License: [MIT](http://www.opensource.org/licenses/mit-license.php)
+#### License: [MIT](https://www.opensource.org/licenses/mit-license.php)
